@@ -14,5 +14,18 @@ app.controller('MainController', ['$scope', function($scope) {
         description: 'Grilled bread garlic, tomatoes, olive oil.',
         price: 4.95
     }];
+    $scope.extras = [{
+        name: 'Cheese Garlic Bread',
+        description: 'Garlic Bread with Cheese',
+        price: 99
+    }, {
+        name: 'Garlic Bread',
+        description: 'Garlic Bread',
+        price: 89
+    }, {
+        name: 'Garlic Bread Stix',
+        description: '',
+        price: 85
+    }];
 
 }]);

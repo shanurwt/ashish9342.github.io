@@ -24,10 +24,20 @@
                     <p class="description">{{appetizer.description}} </p>
                 </div>
                 <div class="price col-md-3">
-                    <p class="price">{{appetizer.price}} </p>
+                    <p class="price">{{appetizer.price | currency}} </p>
                 </div>
             </div>
-
+            <hr>
+            <h2>Sides</h2>
+            <div class="sides row" ng-repeat="side in extras">
+                <div class="item col-md-9">
+                    <h3 class="name">{{side.name}} </h3>
+                    <p class="description">{{side.description}} </p>
+                </div>
+                <div class="price col-md-3">
+                    <p class="price">{{side.price | currency}} </p>
+                </div>
+            </div>
         </div>
     </div>
 
