@@ -1,0 +1,26 @@
+{
+  "name": "ashish9342.github.io",
+  "version": "1.0.0",
+  "description": "This is testing the apps in node server",
+  "main": "web_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashish9342/ashish9342.github.io.git"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "|",
+    "angular",
+    "Apps"
+  ],
+  "author": "Ashish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashish9342/ashish9342.github.io/issues"
+  },
+  "homepage": "https://github.com/ashish9342/ashish9342.github.io#readme"
+}
