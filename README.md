@@ -1,5 +1,5 @@
 # ashish9342.github.io
-This repositary includes the my portfolio 
+This repositary includes the my portfolio (https://ashish9342.github.io/) <br>
 and the code I am playing/ Learning .
 
 Works includes
