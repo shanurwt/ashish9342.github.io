@@ -1,0 +1,43 @@
+<label>Select three most important parameters that will define success of this App</label>
+<div class="col-xs-11 col-xs-offset-1">
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" class="single-checkbox"  ng-change="checkChanged()" ng-disabled="limit==checked" name="1" ng-model="formAction.parameter.1" value="1">Ability to use thse features from a varity of devices / OS
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" class="single-checkbox"  ng-change="checkChanged()" ng-disabled="limit==checked" name="2" ng-model="formAction.parameter.2" value="2">User Interface fluidity
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" class="single-checkbox"   ng-change="checkChanged()" ng-disabled="limit==checked" name="3" ng-model="formAction.parameter.3" value="3">Richness of features
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" class="single-checkbox"   ng-change="checkChanged()" ng-disabled="limit==checked" name="4" ng-model="formAction.parameter.4" value="4">Ability to complete task without n/w
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" class="single-checkbox"   ng-change="checkChanged()" ng-disabled="limit==checked" name="5" ng-model="formAction.parameter.5" value="5">Real-time data sync with Enterprise systems
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" class="single-checkbox"   ng-change="checkChanged()" ng-disabled="limit==checked" name="6" ng-model="formAction.parameter.6" value="6">Access native mobile features i.e. camera, GPS, motion sensor etc.
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="formAction.logic" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>

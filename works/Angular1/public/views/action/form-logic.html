@@ -1,0 +1,88 @@
+<label>Is there heavy dependency on using the business logic and data from enterprise applications?</label>
+
+<div class="form-group">
+    <div class="radio">
+        <label>
+           <input type="radio" name="logic" ng-model="formAction.logic" value="yes" checked>
+            Yes
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="logic" ng-model="formAction.logic" value="no">
+            No
+        </label>
+    </div>
+</div>
+
+<div class="specify" ng-if="formAction.logic === 'yes'">
+  <div class="col-xs-11">
+    <div class="form-group">
+        <div class="radio">
+            <label>
+               <input type="radio" name="businessLogic" ng-model="formAction.businessLogic" value="SAP/Oracle /Microsoft / SFDC" checked>
+                SAP
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="businessLogic" ng-model="formAction.businessLogic" value="SAP/Oracle /Microsoft / SFDC">
+                Oracle
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="businessLogic" ng-model="formAction.businessLogic" value="SAP/Oracle /Microsoft / SFDC">
+                Microsoft
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="businessLogic" ng-model="formAction.businessLogic" value="SAP/Oracle /Microsoft / SFDC">
+                SFDC
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="businessLogic" ng-model="formAction.businessLogic" value="Others">
+                Others
+            </label>
+        </div>
+    </div>
+    <!-- <div class="form-group">
+      <div class="checkbox">
+        <label>
+          <input type="radio" ng-model="formAction.businessLogic.SAP" value="SAP">SAP
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="radio" ng-model="formAction.businessLogic.Oracle" value="Oracle">Oracle
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="radio" ng-model="formAction.businessLogic.Microsoft" value="Microsoft">Microsoft
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="radio" ng-model="formAction.businessLogic.SFDC" value="SFDC">SFDC
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="radio" ng-model="formAction.businessLogic.Others" value="Others">Others
+        </label>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="formAction.urgency" class="btn btn-block btn-info">
+    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>
