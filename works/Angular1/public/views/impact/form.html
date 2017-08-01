@@ -5,7 +5,7 @@
 
       <div class="page-header text-center">
         <div class="logo-holder">
-          <a ui-sref=".profile"><img src="../../images/logo-deloitte-digital.png" alt="logo" /></a>
+          <a ui-sref=".profile"><img src="http://www.deloittedigital.com/assets/img/common/logo-deloitte-digital.png" alt="logo" /></a>
         </div>
 
           <h2>The 7 min Enterprise Mobility : Impact</h2>
@@ -14,16 +14,16 @@
           <!-- add the active class if the state matches our ui-sref -->
           <div id="status-buttons" class="text-center">
               <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
-              <a ui-sref-active="active" ui-sref=".functionalities"><span>2</span> Function</a>
-              <a ui-sref-active="active" ui-sref=".potential"><span>3</span> Potential</a>
-              <a ui-sref-active="active" ui-sref=".target"><span>4</span> Target</a>
+              <a ui-sref-active="active" ui-sref=".functionalities"><span>2</span> Use Case</a>
+              <a ui-sref-active="active" ui-sref=".target"><span>3</span> Target</a>
+              <a ui-sref-active="active" ui-sref=".potential"><span>4</span> Impact Potential</a>
               <a ui-sref-active="active" ui-sref=".interests"><span>5</span> Strategy</a>
-              <a ui-sref-active="active" ui-sref=".payment"><span>6</span> Submit</a>
+              <!-- <a ui-sref-active="active" ui-sref=".payment"><span>6</span> Submit</a> -->
           </div>
       </div>
 
       <!-- use ng-submit to catch the form submission and use our Angular function -->
-      <form id="signup-form" ng-submit="processForm()">
+      <form id="signup-form">
           <!-- our nested state views will be injected here -->
           <div id="form-views" ui-view></div>
       </form>

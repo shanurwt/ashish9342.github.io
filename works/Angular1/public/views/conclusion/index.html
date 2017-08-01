@@ -1,0 +1,85 @@
+<div class="row">
+<div class="col-sm-12">
+
+  <div id="form-container">
+
+      <div class="page-header text-center">
+        <div class="logo-holder">
+          <a href="#/form/profile"><img src="http://www.deloittedigital.com/assets/img/common/logo-deloitte-digital.png" alt="logo" /></a>
+        </div>
+
+          <h2>The 7 min Enterprise Mobility : Summary</h2>
+
+
+      </div>
+
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <div id="signup-form">
+        Hi {{formImpact.name}}!
+      <h4>
+        The App type : <span class="heading03">{{appType}}</span>
+      </h4>
+      <h4>
+        Development Approach : <span class="heading03">{{approach}}</span>
+      </h4>
+      <div class="table">
+        <table class="rwd-table">
+          <tr>
+            <th>Question</th>
+            <th>Response</th>
+          </tr>
+          <tr ng-if"formImpact.functionality">
+            <td>Please specify keywords that summarize features / functionalities of perceived app?</td>
+            <td>{{formImpact.functionality}}</td>
+          </tr>
+          <tr ng-if"formImpact.target">
+            <td>What is the target user segment?</td>
+            <td>{{formImpact.target}}</td>
+          </tr>
+          <!-- <tr ng-if"formImpact.features">
+            <td>What is the potential impact of the proposed app on the following:</td>
+            <td>{{formImpact.features}}</td>
+          </tr> -->
+          <tr ng-if"formImpact.strategy">
+            <td>Is this a strategic imperative for your organiztion?</td>
+            <td>{{formImpact.strategy}}</td>
+          </tr>
+          <tr ng-if"formAction.envision">
+            <td>How do you envision this functionality be accessed in future?</td>
+            <td>{{formAction.envision}}</td>
+          </tr>
+          <tr ng-if"formAction.logic">
+            <td>Is there heavy dependency on using the business logic and data from enterprise applications?</td>
+            <td>{{formAction.logic}} | {{formAction.businessLogic}}</td>
+          </tr>
+          <tr ng-if"formAction.urgency">
+            <td>How urgent is the need?</td>
+            <td>{{formAction.urgency}}</td>
+          </tr>
+          <tr ng-if"formAction.inhouse">
+            <td>Do you intend to utilize any in-house skillset for this need?</td>
+            <td>{{formAction.inhouse}} | {{formAction.inhouseData}}</td>
+          </tr>
+          <tr ng-if"formAction.model">
+            <td>Do you have a preferred model for IT projects?</td>
+            <td>{{formAction.model}}</td>
+          </tr>
+          <tr ng-if"formAction.licences">
+            <td>Are you open to procuring additional licences of your existing enterprise systems for the mobility project?</td>
+            <td>{{formAction.licences}}</td>
+          </tr>
+
+        </table>
+      </div>
+
+      </div>
+  </div>
+
+  <!-- show our formData as it is being typed -->
+  <!-- <pre>
+    {{ formImpact }}
+  </pre> -->
+
+</div>
+</div>
+
