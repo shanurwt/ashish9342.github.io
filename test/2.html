@@ -1,0 +1,23 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+  
+  <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+    <!-- JAVASCRIPT CODE GOES HERE -->
+	
+	
+	var data = [{
+  x: ['giraffes', 'orangutans', 'monkeys', 'Test11', 'Test12', 'Test13', 'Test14', 'Test15', 'Test16', 'Test17','Test18', 'Test19', 'Test20', 'Test21', 'Test22', 'Test23', 'Test24', 'Test25', 'Test26', 'Test27','Test28', 'Test29', 'Test30'],
+  y: [20, 14, 23, 12, 13, 54, 6, 8, 34,53, 18, 28, 30, 20, 14, 23, 12, 13, 54, 6, 8, 34, 45],
+  type: 'bar'
+}];
+
+Plotly.newPlot('myDiv', data);
+
+
+  </script>
+</body>
